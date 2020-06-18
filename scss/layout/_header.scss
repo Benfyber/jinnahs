@@ -1,0 +1,645 @@
+#header {
+	position: relative;
+	background-image: url('../images/newheaderv2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+
+	&.full {
+		min-height: 100vh;
+		background-size: cover;
+		padding-top: 3.4rem;
+
+		@include media-breakpoint-down(xs) {
+			padding-top: 3.1rem;
+		}
+
+		@media only screen and (max-width: 450px) {
+			padding-top: 2.8rem;
+		}
+
+		@media only screen and (max-width: 377px) {
+			padding-top: 4.6rem;
+		}
+
+		#saltaire_fest_link {
+			display: block;
+			margin-top: 6rem;
+
+			img {
+				width: 20rem;
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&.half {
+		height: 50vh;
+		background-size: cover;
+	}
+
+	#careers {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		-o-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		display: block;
+
+		.content {
+			p {
+				&:nth-child(1) {
+					font-size: 8rem;
+					margin-bottom: 2rem;
+
+					@include media-breakpoint-down(lg) {
+						font-size: 7rem;
+					}
+
+					@include media-breakpoint-down(md) {
+						font-size: 6rem;
+					}
+
+					@include media-breakpoint-down(sm) {
+						font-size: 5rem;
+					}
+
+					@media only screen and (max-width: 400px) {
+						font-size: 4rem;
+					}
+				}
+
+				&:nth-child(2) {
+					font-size: 4rem;
+
+					@include media-breakpoint-down(lg) {
+						font-size: 3rem;
+					}
+
+					@include media-breakpoint-down(md) {
+						font-size: 2.6rem;
+					}
+
+					@include media-breakpoint-down(sm) {
+						font-size: 2.2rem;
+					}
+
+					@media only screen and (max-width: 400px) {
+						font-size: 2rem;
+					}
+				}
+			}
+		}
+	}
+
+	.overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background-color: #000;
+		opacity: 0.4;
+		z-index: 1;
+	}
+
+	.topbar {
+		position: relative;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		padding-top: 3rem;
+		z-index: 3;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+
+		@include media-breakpoint-down(xs) {
+			/*padding-top: 25%;*/
+			padding-top: 2rem;
+		}
+
+		@include media-breakpoint-down(sm) {
+			margin: auto;
+		}
+
+		#hd_logo {
+			width: 24%;
+
+			@include media-breakpoint-down(lg) {
+				width: 23%;
+			}
+
+			@include media-breakpoint-down(md) {
+				width: 30%;
+			}
+
+			@include media-breakpoint-down(xs) {
+				width: 100%;
+
+				/*				&:after{
+					content: 'Italian Lunch Bar';
+					display: block;
+					text-align: center;
+					font-size: 2.4rem;
+					color: #fff;
+				}*/
+			}
+
+			@media only screen and (max-width: 450px) {
+				&:after {
+					font-size: 2rem;
+				}
+			}
+
+			img {
+				width: 100%;
+				height: auto;
+
+				@include media-breakpoint-down(xs) {
+					display: block;
+					margin: 0 auto;
+					width: 25rem;
+				}
+
+				@media only screen and (max-width: 450px) {
+					width: 20rem;
+				}
+			}
+		}
+
+		#hd_nav {
+			width: 62%;
+
+			@include media-breakpoint-down(lg) {
+				width: 62%;
+			}
+
+			@include media-breakpoint-down(md) {
+				width: 69%;
+			}
+
+			@include media-breakpoint-down(xs) {
+				width: 100%;
+			}
+
+
+
+			ul {
+				list-style-type: none;
+				text-align: right;
+
+				@include media-breakpoint-down(xs) {
+					text-align: center;
+					margin-top: 1rem;
+					margin-bottom: 1.6rem;
+				}
+
+				li {
+					display: inline-block;
+					margin-left: 2.5rem;
+					position: relative;
+
+					@include media-breakpoint-down(sm) {
+						margin-left: 1.5rem;
+
+						&:nth-child(1) {
+							display: none;
+						}
+					}
+
+					@include media-breakpoint-down(xs) {
+						&:nth-child(1) {
+							display: inline-block;
+							margin: 0;
+						}
+					}
+
+					@media only screen and (max-width: 450px) {
+						&:nth-child(1) {
+							display: none;
+						}
+
+						&:nth-child(2) {
+							margin: 0;
+						}
+					}
+
+					@media only screen and (max-width: 330px) {
+						margin-left: 1rem;
+					}
+
+					a {
+						font-size: 1.8rem;
+						color: #fff;
+						text-transform: uppercase;
+
+						@include media-breakpoint-down(md) {
+							font-size: 1.3rem;
+						}
+
+						@media only screen and (max-width: 380px) {
+							font-size: 1.4rem;
+						}
+
+						/*@include media-breakpoint-down(sm){
+							font-size: 1.4rem;
+						}
+
+						@include media-breakpoint-down(xs){
+							font-size: 1.6rem;
+						}*/
+					}
+
+					.sub-menu {
+						position: absolute;
+						top: 100%;
+						left: 0;
+						text-align: left;
+						max-height: 0;
+						overflow: hidden;
+						opacity: 0;
+						-webkit-transition: opacity 0.5s, max-height 0s 0.5s;
+						-o-transition: opacity 0.5s, max-height 0s 0.5s;
+						transition: opacity 0.5s, max-height 0s 0.5s;
+						margin: 0;
+
+
+						&.show {
+							max-height: 10rem;
+							opacity: 1;
+							-webkit-transition: opacity 0.5s;
+							-o-transition: opacity 0.5s;
+							transition: opacity 0.5s;
+						}
+
+						li {
+							margin: 0;
+							display: block;
+						}
+					}
+				}
+
+			}
+		}
+
+		#social {
+			text-align: center;
+			margin-left: 2rem;
+
+			@include media-breakpoint-down(md) {
+				display: none;
+			}
+
+			@include media-breakpoint-down(xs) {
+				display: block;
+			}
+
+			.menubutton {
+				display: inline-block;
+				font-weight: 400;
+				color: white;
+				text-align: center;
+				vertical-align: middle;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+				background-color: lighten($color-darkgrey, 10deg);
+				padding: 1rem 1.75rem;
+				font-size: 2rem;
+				line-height: 1.5;
+				border-radius: 1rem;
+				transition: .5s ease all;
+
+				&.mob {
+					display: none;
+
+					@include media-breakpoint-down(sm) {
+						display: block;
+						margin: 2rem auto 0 0;
+					}
+				}
+
+				&:last-of-type {
+					background-color: white;
+					color: $color-darkgrey;
+
+					&:hover {
+						background-color: darken(white, 20deg);
+						text-decoration: none
+					}
+				}
+
+				&:hover {
+					background-color: $color-darkgrey;
+					text-decoration: none
+				}
+			}
+
+			a {
+				text-decoration: none;
+
+				img {
+					display: inline-block;
+					width: 3rem;
+					margin: 0rem 0.5rem 0 0.5rem;
+
+					@include media-breakpoint-down(md) {
+						margin: 1rem 0.5rem 0 0.5rem;
+					}
+				}
+			}
+
+			#saltaire_fest_link {
+				display: none;
+
+				@include media-breakpoint-down(sm) {
+					margin-top: 1.5rem;
+					display: inline-flex;
+					align-items: center;
+					font-size: 2rem;
+					font-weight: 400;
+					color: #fff;
+					line-height: 1.5;
+					background-color: lighten($color-darkgrey, 10deg);
+					padding: 1rem 1.75rem;
+					border-radius: 1rem;
+					transition: .5s ease all;
+				}
+
+
+
+				img {
+					width: 3rem;
+					margin: 0 1rem 0 0;
+				}
+
+				&:hover {
+					background-color: $color-darkgrey;
+					text-decoration: none
+				}
+			}
+
+			@include media-breakpoint-down(xs) {
+				text-align: center;
+				margin: 0 auto 3.6rem auto;
+			}
+		}
+
+	}
+
+	.hero {
+		position: relative;
+		z-index: 2;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		height: 82%;
+
+		//just for the covid update
+		flex-direction: column;
+
+		//covid
+		// @include media-breakpoint-down(xs) {
+		// 	display: none;
+		// }
+
+		.grey-background {
+			display: flex;
+			justify-content: center;
+			background-color: $color-darkgrey;
+			color: #fafafa;
+			font-size: 2rem;
+			padding: 4rem;
+			border-radius: 1rem;
+			margin: 2rem;
+
+			@include media-breakpoint-down(lg) {
+				padding: 2rem;
+			}
+
+			@include media-breakpoint-down(md) {
+				padding: 0;
+			}
+
+			.flex-center {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+			p {
+				font-size: 2rem;
+				margin: 1rem 2rem;
+
+				@include media-breakpoint-down(md) {
+					padding: .5rem 1.5rem;
+					font-size: 1.5rem;
+					width:100%;
+				}
+			}
+
+			a {
+				display: inline-block;
+				font-size: 2rem;
+				font-weight: 400;
+				color: #fff;
+				line-height: 1.5;
+				background-color: $color-darkgrey;
+				padding: 1rem 1.75rem;
+				border-radius: 1rem;
+				transition: .5s ease all;
+				border: solid white .1rem;
+				margin: 2rem;
+
+				&:hover {
+					text-decoration: none;
+					color: $color-darkgrey;
+					background-color: white;
+					border: solid white .1rem;
+				}
+			}
+		}
+
+		.content {
+			text-align: center;
+			padding: 0;
+			width: 50%;
+
+			@include media-breakpoint-down(md) {
+				width: 75%;
+			}
+
+			//covid
+			@include media-breakpoint-down(xs) {
+				display: none;
+			}
+
+			.btns {
+				a {
+					display: inline-block;
+					font-size: 2rem;
+					font-weight: 400;
+					color: #fff;
+					line-height: 1.5;
+					background-color: lighten($color-darkgrey, 10deg);
+					padding: 1rem 1.75rem;
+					border-radius: 1rem;
+					transition: .5s ease all;
+
+					/*&:last-of-type{
+						margin-left: 3rem;
+						background-color: white;
+						color: $color-darkgrey;
+
+						&:hover{
+							background-color: darken(white, 20deg);
+							text-decoration: none
+						}
+					}*/
+
+					&:hover {
+						background-color: $color-darkgrey;
+						text-decoration: none
+					}
+				}
+			}
+
+
+
+
+			#saltaire_fest_link {
+				text-align: center;
+				margin-top: 2rem;
+
+				a {
+					display: inline-flex;
+					align-items: center;
+					font-size: 2rem;
+					font-weight: 400;
+					color: #fff;
+					line-height: 1.5;
+					background-color: lighten($color-darkgrey, 10deg);
+					padding: 1rem 1.75rem;
+					border-radius: 1rem;
+					transition: .5s ease all;
+
+					img {
+						width: 3rem;
+						margin: 0 1rem 0 0;
+					}
+
+					&:hover {
+						background-color: $color-darkgrey;
+						text-decoration: none
+					}
+				}
+			}
+
+			&.homehero {
+				padding: 25rem 0;
+			}
+
+			&#animatein {
+				opacity: 0;
+				-webkit-animation: bummer 2s;
+				animation: bummer 2s;
+				-webkit-transform: scale(0, 0);
+				transform: scale(0, 0);
+				-webkit-animation-fill-mode: forwards;
+				animation-fill-mode: forwards;
+				/* Add this so that your modal doesn't 
+			                                      close after the animation completes */
+			}
+
+			@-webkit-keyframes bummer {
+				100% {
+					-webkit-transform: scale(1, 1);
+					opacity: 1;
+				}
+			}
+
+			@keyframes bummer {
+				100% {
+					transform: scale(1, 1);
+					opacity: 1;
+				}
+			}
+
+
+
+			#social2 {
+				text-align: center;
+				margin-left: 2rem;
+				display: none;
+
+				@include media-breakpoint-down(md) {
+					display: block;
+					margin-left: 0;
+				}
+
+				a {
+					text-decoration: none;
+
+					img {
+						display: inline-block;
+						width: 3rem;
+						margin: 0rem 0.5rem 0 0.5rem;
+
+						@include media-breakpoint-down(md) {
+							margin: 1rem 0.5rem 0 0.5rem;
+						}
+					}
+				}
+
+				@include media-breakpoint-down(xs) {
+					text-align: center;
+					margin: 0 auto 3.6rem auto;
+				}
+			}
+
+			img {
+				max-width: 50rem;
+				width: 100%;
+				height: auto;
+				margin-bottom: 2rem;
+
+				@include media-breakpoint-down(lg) {
+					max-width: 45rem;
+				}
+
+				@include media-breakpoint-down(md) {
+					max-width: 40rem;
+				}
+
+				@include media-breakpoint-down(sm) {
+					max-width: 30rem;
+				}
+			}
+
+			p {
+				font-size: 4.8rem;
+				color: #fff;
+				margin: 0;
+				line-height: 1em;
+
+				@include media-breakpoint-down(lg) {
+					font-size: 4.4rem;
+				}
+
+				@include media-breakpoint-down(md) {
+					font-size: 4rem;
+				}
+
+				@include media-breakpoint-down(sm) {
+					font-size: 3rem;
+				}
+			}
+		}
+	}
+}

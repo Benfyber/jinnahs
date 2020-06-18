@@ -1,0 +1,328 @@
+#christmas_page {
+	background-image: url(../images/newheaderv2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	padding: 8rem 0;
+
+	#event_menu {
+		background-color: #fff;
+		padding: 8rem;
+		text-align: center;
+		position: relative;
+		overflow: hidden;
+
+		@include media-breakpoint-down(lg) {
+			padding: 8rem 4rem;
+			margin-bottom: 0;
+		}
+
+		@include media-breakpoint-down(sm) {
+			padding: 6rem 1.5rem;
+		}
+
+		@include media-breakpoint-down(xs) {
+			padding: 6rem 1rem;
+		}
+
+		#snowflake {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%) rotate(73deg);
+			right: -34rem;
+			height: 80%;
+			width: auto;
+		}
+
+		.content {
+			position: relative;
+
+			#logo_grey {
+				width: 50rem;
+				margin-bottom: 4rem;
+
+				@include media-breakpoint-down(sm) {
+					width: 37rem;
+				}
+
+				@media only screen and (max-width: 450px) {
+					width: 100%;
+				}
+			}
+
+			h1 {
+				font-size: 4rem;
+				font-weight: 600;
+				line-height: 1;
+				color: $color-darkgrey;
+				margin-bottom: 2rem;
+
+				@include media-breakpoint-down(sm) {
+					font-size: 3rem;
+				}
+
+				@include media-breakpoint-down(xs) {
+					font-size: 2.4rem;
+				}
+			}
+
+			.intro_paras {
+				font-size: 2rem;
+				color: $color-darkgrey;
+
+				@include media-breakpoint-down(md) {
+					font-size: 1.8rem;
+				}
+
+				@include media-breakpoint-down(sm) {
+					font-size: 1.6rem;
+				}
+
+				/*@include media-breakpoint-down(xs){
+					font-size: 1.4rem;
+				}
+
+				@media only screen and (max-width: 350px){
+					font-size: 1.2rem;
+				}*/
+			}
+
+			.menu_section {
+				margin: 4rem 0;
+				border: 0.1rem solid $color-darkgrey;
+
+				.section_heading {
+					font-size: 2.4rem;
+					font-weight: 600;
+					color: #fff;
+					line-height: 1;
+					background-color: $color-darkgrey;
+					padding: 2rem;
+
+					@include media-breakpoint-down(md) {
+						font-size: 2rem;
+					}
+
+					@include media-breakpoint-down(sm) {
+						font-size: 1.8rem;
+					}
+
+					@include media-breakpoint-down(xs) {
+						font-size: 1.6rem;
+						padding: 1.5rem;
+					}
+				}
+
+				.menu_items {
+					padding: 2rem;
+
+					@include media-breakpoint-down(xs) {
+						padding: 1.5rem;
+					}
+
+					.meal_title {
+						font-size: 2rem;
+						font-weight: 600;
+						margin-bottom: 1.5rem;
+						color: $color-darkgrey;
+						display: flex;
+						justify-content: space-between;
+
+						@include media-breakpoint-down(md) {
+							font-size: 1.8rem;
+						}
+
+						@include media-breakpoint-down(sm) {
+							font-size: 1.6rem;
+						}
+
+						@include media-breakpoint-down(xs) {
+							font-size: 1.4rem;
+						}
+					}
+
+					.meal_info {
+						font-size: 1.6rem;
+						color: $color-darkgrey;
+						margin-bottom: 1.5rem;
+						text-align: left;
+
+						@include media-breakpoint-down(md) {
+							font-size: 1.4rem;
+						}
+
+						@include media-breakpoint-down(xs) {
+							font-size: 1.2rem;
+						}
+
+						&:last-of-type {
+							margin-bottom: 0;
+						}
+					}
+				}
+			}
+
+			#disclaimers {
+				margin: 4rem 0rem;
+
+				p {
+					font-size: 1.6rem;
+					font-weight: 600;
+					color: $color-darkgrey;
+
+					&:nth-of-type(1) {
+						margin-bottom: 1rem;
+					}
+
+					@include media-breakpoint-down(md) {
+						font-size: 1.4rem;
+					}
+
+					@include media-breakpoint-down(sm) {
+						font-size: 1.2rem;
+					}
+				}
+			}
+
+			#seating_section {
+				margin: 4rem 0;
+				padding: 4rem;
+				border: 0.1rem solid $color-darkgrey;
+				position: relative;
+
+				@include media-breakpoint-down(xs) {
+					padding: 3rem 1.5rem;
+				}
+
+				h2 {
+					font-size: 2.4rem;
+					font-weight: 600;
+					color: $color-darkgrey;
+					line-height: 1;
+					background-color: #fff;
+					padding: 1.5rem 3rem;
+					position: absolute;
+					top: -2.7rem;
+					left: 50%;
+					transform: translateX(-50%);
+
+					@include media-breakpoint-down(md) {
+						font-size: 2rem;
+						top: -2.5rem;
+					}
+
+					@include media-breakpoint-down(sm) {
+						font-size: 1.8rem;
+					}
+
+					@include media-breakpoint-down(xs) {
+						font-size: 1.6rem;
+						padding: 1.5rem;
+						top: -2.3rem;
+					}
+				}
+
+				p {
+					font-size: 2.1rem;
+					font-weight: 300;
+					margin-bottom: 1.5rem;
+					color: $color-darkgrey;
+
+					@include media-breakpoint-down(md) {
+						font-size: 1.9rem;
+					}
+
+					@include media-breakpoint-down(sm) {
+						font-size: 1.7rem;
+					}
+
+					@include media-breakpoint-down(xs) {
+						font-size: 1.5rem;
+					}
+
+					&:last-of-type {
+						margin-bottom: 0;
+					}
+				}
+			}
+
+			#add_info {
+				margin: 4rem 0rem;
+
+				p {
+					font-size: 1.8rem;
+					color: $color-darkgrey;
+
+					&:nth-of-type(1) {
+						font-weight: 400;
+						margin-bottom: 1.5rem;
+					}
+
+					&:nth-of-type(2) {
+						font-weight: 600;
+					}
+
+					@include media-breakpoint-down(md) {
+						font-size: 1.6rem;
+					}
+
+					@include media-breakpoint-down(sm) {
+						font-size: 1.4rem;
+					}
+				}
+			}
+
+			#booking_section {
+				margin: 8rem 0 4rem 0;
+
+				@include media-breakpoint-down(sm) {
+					margin: 6rem 0 4rem 0;
+				}
+
+				a {
+					display: inline-block;
+					font-size: 3.5rem;
+					font-weight: 600;
+					padding: 2rem 6rem;
+					text-decoration: none;
+					color: #fff;
+					background-color: $color-darkgrey;
+					border-radius: 2rem;
+					transition: .5s ease all;
+
+					&:hover {
+						background-color: lighten($color-darkgrey, 20%);
+					}
+
+					@include media-breakpoint-down(md) {
+						font-size: 3rem;
+						padding: 1.5rem 5rem;
+					}
+
+					@include media-breakpoint-down(sm) {
+						font-size: 2.2rem;
+						padding: 1rem 4rem;
+					}
+
+					@include media-breakpoint-down(xs) {
+						font-size: 2rem;
+					}
+				}
+			}
+
+			#go_back {
+				font-size: 1.6rem;
+				color: $color-darkgrey;
+
+				@include media-breakpoint-down(md) {
+					font-size: 1.4rem;
+				}
+
+				a {
+					color: inherit;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}

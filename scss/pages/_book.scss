@@ -1,0 +1,542 @@
+#booking_page{
+	padding: 10rem 0 14rem 0;
+	background-color: $color-darkgrey;
+
+	@include media-breakpoint-down(sm){
+		padding: 6rem 0;
+	}
+
+	.page_title{
+		font-size: 3.6rem;
+		text-align: center;
+		color: $color-orange;
+		margin: 0;
+
+		@include media-breakpoint-down(sm){
+			font-size: 3.2rem;
+		}
+
+		@media only screen and (max-width: 600px){
+			font-size: 2.6rem;
+		}
+	}
+
+	.intro{
+		font-size: 1.8rem;
+		margin: 3rem 0;
+		text-align: center;
+		color: #fff;
+
+		@include media-breakpoint-down(md){
+			font-size: 1.6rem;
+		}
+	}
+
+	#booking_form{
+		form{
+			font-size: 1.8rem;
+
+			@media only screen and (max-width: 500px){
+				font-size: 1.6rem;
+			}
+
+			.wpcf7-not-valid-tip{
+				font-size: 1.4rem;
+				color: $color-orange;
+				margin-top: 0.5rem;
+			}
+
+			.wpcf7-response-output{
+				font-size: 1.4rem;
+				color: $color-orange;
+				margin: 0.5rem 0 0 0;
+				padding: 0;
+				border: 0;
+			}
+
+			#form_top_row{
+				display: -webkit-flex;
+				display: -moz-flex;
+				display: -ms-flex;
+				display: -o-flex;
+				display: flex;
+				margin-bottom: 1.5rem;
+
+				#form_title_wrap{
+					width: 30%;
+
+					@media only screen and (max-width: 500px){
+						width: 20%;
+					}
+
+					@media only screen and (max-width: 350px){
+						width: 25%;
+					}
+
+					label{
+						/*font-size: 1.8rem;*/
+						color: #fff;
+
+						span{
+							color: $color-orange;
+						}
+					}
+
+					select{
+						width: 100%;
+						border-radius: 0.5rem;
+						border: 0.1rem solid #000;
+
+						&:focus{
+							outline: none;
+							-webkit-box-shadow: 0px 0px 2px 2px rgba(178,178,178,1);
+							-moz-box-shadow: 0px 0px 2px 2px rgba(178,178,178,1);
+							box-shadow: 0px 0px 2px 2px rgba(178,178,178,1);
+						}
+					}
+				}
+					
+				#form_name_wrap{
+					width: 70%;
+					padding-left: 3rem;
+
+					@media only screen and (max-width: 500px){
+						width: 80%;
+						padding-left: 1.5rem;
+					}
+
+					@media only screen and (max-width: 350px){
+						width: 75%;
+					}
+
+					label{
+						/*font-size: 1.8rem;*/
+						color: #fff;
+
+						span{
+							color: $color-orange;
+						}
+					}
+
+					input{
+						width: 100%;
+						border-radius: 0.5rem;
+						border: 0.1rem solid #000;
+						padding: 0 0.5rem;
+
+						&:focus{
+							outline: none;
+							-webkit-box-shadow: 0px 0px 2px 2px rgba(178,178,178,1);
+							-moz-box-shadow: 0px 0px 2px 2px rgba(178,178,178,1);
+							box-shadow: 0px 0px 2px 2px rgba(178,178,178,1);
+						}
+					}
+				}
+			}
+
+			p{
+				margin-bottom: 1.5rem;
+
+				label{
+					/*font-size: 1.8rem;*/
+					color: #fff;
+
+					span{
+						color: $color-orange;
+					}
+				}
+
+				input{
+					width: 100%;
+					border-radius: 0.5rem;
+					border: 0.1rem solid #000;
+					padding: 0 0.5rem;
+
+					&:focus{
+						outline: none;
+						-webkit-box-shadow: 0px 0px 2px 2px rgba(178,178,178,1);
+						-moz-box-shadow: 0px 0px 2px 2px rgba(178,178,178,1);
+						box-shadow: 0px 0px 2px 2px rgba(178,178,178,1);
+					}
+				}
+			}
+
+			#quiz {
+				label{
+					color: #fff;
+					width: 100%;
+
+					span{
+						color: $color-orange;
+					}
+				}
+			}
+
+			.quiz123{
+				display: -webkit-flex;
+				display: -moz-flex;
+				display: -ms-flex;
+				display: -o-flex;
+				display: flex;
+				justify-content: space-between;
+
+				@media only screen and (max-width: 500px){
+					flex-wrap: wrap;
+				}
+
+				select{
+					width: 100%;
+					border-radius: 0.5rem;
+					border: 0.1rem solid #000;
+					text-indent: 0.5rem;
+
+					&:focus{
+						outline: none;
+						-webkit-box-shadow: 0px 0px 2px 2px rgba(178,178,178,1);
+						-moz-box-shadow: 0px 0px 2px 2px rgba(178,178,178,1);
+						box-shadow: 0px 0px 2px 2px rgba(178,178,178,1);
+					}
+				}
+
+				input{
+					width: 100%;
+					border-radius: 0.5rem;
+					border: 0.1rem solid #000;
+					line-height: 1.4em;
+					text-indent: 0.5rem;
+					padding: 0;
+
+					&:focus{
+						outline: none;
+						-webkit-box-shadow: 0px 0px 2px 2px rgba(178,178,178,1);
+						-moz-box-shadow: 0px 0px 2px 2px rgba(178,178,178,1);
+						box-shadow: 0px 0px 2px 2px rgba(178,178,178,1);
+					}
+				}
+			}
+
+			
+
+			#form_btm_row{
+				display: -webkit-flex;
+				display: -moz-flex;
+				display: -ms-flex;
+				display: -o-flex;
+				display: flex;
+				justify-content: space-between;
+				margin-bottom:1.5rem;
+
+				@media only screen and (max-width: 500px){
+					flex-wrap: wrap;
+				}
+
+				div{
+					&#guests{
+						width: 11.7rem;
+
+						@media only screen and (max-width: 500px){
+							order: 1;
+							width: 45%;
+						}
+					}
+
+					&#date{
+						width: 21rem;
+
+						@media only screen and (max-width: 530px){
+							width: 20rem;
+						}
+
+						@media only screen and (max-width: 500px){
+							order: 3;
+							width: 100%;
+							margin-top: 1.5rem;
+
+							input{
+								text-align: center;
+								padding-left: 3rem;
+							}
+						}
+
+						input{
+							font-size: 1.8rem;
+
+							@media only screen and (max-width: 500px){
+								font-size: 1.6rem;
+							}
+						}	
+					}
+
+					&#time{
+						width: 13rem;
+
+						@media only screen and (max-width: 500px){
+							order: 2;
+							width: 45%;
+						}
+					}
+
+					
+
+					/*width: 21%;*/
+
+					/*@media only screen and (max-width: 500px){
+						&:nth-child(1){
+							width: 20%;
+						}
+
+						&:nth-child(2){
+							width: 15%;
+						}
+
+						&:nth-child(3){
+							width: 35%;
+						}
+
+						&:nth-child(4){
+							width: 20%;
+						}
+					}
+
+					@media only screen and (max-width: 400px){
+						&:nth-child(1){
+							width: 50%;
+							padding-right: 0.75rem;
+							margin-bottom: 1.5rem;
+						}
+
+						&:nth-child(2){
+							width: 50%;
+							padding-left: 0.75rem;
+							margin-bottom: 1.5rem;
+						}
+
+						&:nth-child(3){
+							width: 50%;
+							padding-right: 0.75rem;
+						}
+
+						&:nth-child(4){
+							width: 50%;
+							padding-left: 0.75rem;
+						}
+					}*/
+
+					label{
+						color: #fff;
+
+						span{
+							color: $color-orange;
+						}
+					}
+
+					select{
+						width: 100%;
+						border-radius: 0.5rem;
+						border: 0.1rem solid #000;
+						text-indent: 0.5rem;
+
+						&:focus{
+							outline: none;
+							-webkit-box-shadow: 0px 0px 2px 2px rgba(178,178,178,1);
+							-moz-box-shadow: 0px 0px 2px 2px rgba(178,178,178,1);
+							box-shadow: 0px 0px 2px 2px rgba(178,178,178,1);
+						}
+					}
+
+					input{
+						width: 100%;
+						border-radius: 0.5rem;
+						border: 0.1rem solid #000;
+						line-height: 1.4em;
+						text-indent: 0.5rem;
+						padding: 0;
+
+						&:focus{
+							outline: none;
+							-webkit-box-shadow: 0px 0px 2px 2px rgba(178,178,178,1);
+							-moz-box-shadow: 0px 0px 2px 2px rgba(178,178,178,1);
+							box-shadow: 0px 0px 2px 2px rgba(178,178,178,1);
+						}
+					}
+				}
+			}
+
+			#event_check{
+				text-align: center;
+				/*display: none;*/
+
+				label{
+					color: #fff;
+					margin-bottom: 0;
+				}
+
+				.wpcf7-list-item-label{
+					color: #fff;
+				}
+
+				.saltaire_fest_booking{
+					@include media-breakpoint-down(sm){
+						display: block;
+						margin-top: .5rem;
+
+						.first{
+							margin-left: 0;
+						}
+					}
+				}
+			}
+
+			#custom_error{
+				display: none;
+				margin-top: 1.5rem;
+				width: 100%;
+
+				p{
+					font-size: 1.4rem;
+					color: $color-orange;
+					text-align: center;
+				}
+			}
+
+			.btn_cont{
+				display: -webkit-flex;
+				display: -moz-flex;
+				display: -ms-flex;
+				display: -o-flex;
+				display: flex;
+				position: relative;
+				margin-top: 1.5rem;
+				justify-content: flex-end;
+
+				.btn_wrap{
+					position: relative;
+					z-index: 1;
+					border-radius: 0.5rem;
+					overflow: hidden;
+					margin: 2rem auto;
+
+					.wpcf7-submit{
+						margin-top: auto;
+						border: 0.2rem solid $color-orange;
+						border-radius: 0.5rem;
+						background-color: transparent;
+						color: #fff;
+						line-height: 1em;
+						padding: 0.4rem 2rem;
+	    				margin-left: auto;
+	    				cursor: pointer;
+
+	    				&:focus{
+							outline: none;
+							-webkit-box-shadow: 0px 0px 2px 2px rgba(178,178,178,1);
+							-moz-box-shadow: 0px 0px 2px 2px rgba(178,178,178,1);
+							box-shadow: 0px 0px 2px 2px rgba(178,178,178,1);
+						}
+					}
+
+					.ajax-loader{
+						position: absolute;
+						top: 30%;
+						right: 0;
+					}
+
+					&:before{
+						content: ' ';
+						position: absolute;
+						top: 100%;
+						left: 0;
+						right: 0;
+						bottom: 0;
+						background-color: $color-orange;
+						z-index: -1;
+						border-radius: 0.5rem;
+						-webkit-transition: top 0.1s;
+						-o-transition: top 0.1s;
+						transition: top 0.1s;
+					}
+
+					&.animate{
+						&:before{
+							top: 0;
+						}
+					}
+				}
+			
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,308 @@
+#menu_page {
+	/*padding: 6rem 0; */
+	background-color: $color-darkgrey;
+
+	#food_nav {
+		margin-top: 6rem;
+
+		.slick-slide {
+			outline: none;
+
+			p {
+				display: block;
+				font-size: 1.8rem;
+				color: #fff;
+				text-align: center;
+			}
+		}
+
+		.slick-current {
+			p {
+				color: $color-orange;
+				text-decoration: underline;
+			}
+		}
+	}
+
+	#food_menu {
+		position: relative;
+		padding-bottom: 6rem;
+
+		#pretext {
+			font-size: 2rem;
+			color: $color-lightgrey;
+			text-align: center;
+			margin: 6rem 0 0 0;
+		}
+
+
+		#posttext {
+			font-size: 1.4rem;
+			color: #fff;
+			text-align: center;
+			margin: 3rem 0 6rem 0;
+		}
+
+		.quicklinks {
+			position: relative;
+			bottom: unset;
+			left: unset;
+			top: unset;
+			right: unset;
+			margin: 0;
+			padding-top: 6rem;
+			width: 100%;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			justify-content: space-between;
+			list-style: none;
+			flex-wrap: wrap;
+
+			@include media-breakpoint-down(md) {
+				justify-content: center;
+			}
+
+			li {
+				text-indent: 0;
+				width: auto;
+				height: auto;
+				margin: 0;
+				background-color: $color-darkgrey;
+				font-size: 1.8rem;
+				color: #fff;
+
+				@include media-breakpoint-down(md) {
+					font-size: 1.3rem;
+					margin: 0 .5rem;
+				}
+
+				&.active {
+					color: $color-orange;
+				}
+
+				&:before {
+					display: none;
+				}
+
+				&:after {
+					display: none;
+				}
+
+				a {
+					color: white;
+				}
+			}
+		}
+
+		.quicklinks2 {
+			position: relative;
+			bottom: unset;
+			left: unset;
+			top: unset;
+			right: unset;
+			margin: 0;
+			padding: 3rem 6rem;
+			width: 100%;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			justify-content: space-between;
+			list-style: none;
+			border-bottom: 1px solid white;
+			flex-wrap: wrap;
+
+			@include media-breakpoint-down(md) {
+				justify-content: center;
+			}
+
+			li {
+				text-indent: 0;
+				width: auto;
+				height: auto;
+				margin: 0;
+				background-color: $color-darkgrey;
+
+				font-size: 1.8rem;
+				color: #fff;
+
+				@include media-breakpoint-down(md) {
+					font-size: 1.3rem;
+					margin: 0 .5rem;
+				}
+
+				&.active {
+					color: $color-orange;
+				}
+
+				&:before {
+					display: none;
+				}
+
+				&:after {
+					display: none;
+				}
+
+				a {
+					color: white;
+				}
+			}
+		}
+
+		.section {
+			margin-top: 3rem;
+		}
+
+		.heading {
+			font-size: 3.6rem;
+			color: $color-orange;
+			text-align: center;
+			margin: 6rem 0 2rem 0;
+
+			@include media-breakpoint-down(sm) {
+				font-size: 3.2rem;
+			}
+
+			@media only screen and (max-width: 600px) {
+				font-size: 2.6rem;
+			}
+		}
+
+		.sub-heading {
+			font-size: 2.6rem;
+			color: $color-orange;
+			text-align: center;
+			margin: 3rem 0 1rem 0;
+
+			@include media-breakpoint-down(sm) {
+				font-size: 2.8rem;
+			}
+
+			@media only screen and (max-width: 600px) {
+				font-size: 2.4rem;
+			}
+		}
+
+		.desctitle {
+			font-size: 2rem;
+			color: white;
+			text-align: center;
+			margin: 3rem 0 6rem 0;
+			width: 100%;
+		}
+
+		.menu_list {
+			width: 100%;
+			padding: 0 1.5rem 0rem 0;
+			list-style-type: none;
+			text-align: center;
+			margin-bottom: 3rem;
+			color: white;
+
+
+			li {
+				font-size: 1.8rem;
+				color: #fff;
+				/*width: 38rem;*/
+				margin: 0 auto 3rem auto;
+
+				@include media-breakpoint-down(md) {
+					font-size: 1.6rem;
+					width: auto;
+				}
+
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+
+				span {
+					display: block;
+					/*margin-top: 1rem;*/
+					font-size: 1.8rem;
+					color: $color-orange;
+				}
+
+				&.section_title {
+					color: $color-orange;
+					font-size: 2.4rem;
+					margin-bottom: 1.5rem;
+
+					@include media-breakpoint-down(md) {
+						font-size: 2.2rem;
+					}
+				}
+			}
+
+			.foodname {
+				font-size: 2.4rem;
+				color: $color-orange;
+				text-align: center;
+				font-weight: 500;
+			}
+
+			.desc {
+				font-size: 1.6rem;
+				color: white;
+				text-align: center;
+				font-weight: 300;
+			}
+
+			.price {
+				font-size: 2rem;
+				color: $color-orange;
+				text-align: center;
+				font-weight: 500;
+			}
+		}
+
+		.flex-center {
+			display: flex;
+			justify-content: space-around;
+		}
+
+		.main-price {
+			position: relative;
+
+			&::before {
+				content: "M";
+				position: absolute;
+				background-color: white;
+				border: solid $color-darkgrey .2rem;
+				width: 3rem;
+				height: 3rem;
+				color: $color-darkgrey;
+				transform: translateX(-4rem);
+				text-align: center;
+			}
+		}
+
+		.side-price {
+			position: relative;
+
+			&::before {
+				content: "S";
+				position: absolute;
+				background-color: $color-darkgrey;
+				width: 3rem;
+				height: 3rem;
+				transform: translateX(-4rem);
+				color: white;
+				border: solid white .2rem;
+				text-align: center;
+			}
+		}
+
+		.additional_info {
+			font-size: 1.6rem;
+			color: #fff;
+			text-align: center;
+			width: 100%;
+			padding-top: 5rem;
+		}
+	}
+}

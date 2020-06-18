@@ -1,0 +1,103 @@
+html {
+	.grecaptcha-badge {
+		visibility: hidden;
+	}
+}
+
+.boot_cont {
+	@include media-breakpoint-down(xl) {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+		max-width: 1140px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	@include media-breakpoint-down(lg) {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+		max-width: 960px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	@include media-breakpoint-down(md) {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+		max-width: 720px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	@include media-breakpoint-down(sm) {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+		max-width: 540px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	@include media-breakpoint-down(xs) {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+		max-width: unset;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+p {
+	margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+.menubutton {
+	display: inline-block;
+	font-weight: 400;
+	color: white;
+	text-align: center;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-color: lighten($color-darkgrey, 10deg);
+	padding: 1rem 1.75rem;
+	font-size: 2rem;
+	line-height: 1.5;
+	border-radius: 1rem;
+	transition: .5s ease all;
+
+	&:last-of-type {
+		background-color: white;
+		color: $color-darkgrey;
+
+		&:hover {
+			background-color: darken(white, 20deg);
+			text-decoration: none
+		}
+	}
+
+	&:hover {
+		background-color: $color-darkgrey;
+		text-decoration: none
+	}
+}

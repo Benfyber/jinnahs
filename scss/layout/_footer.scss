@@ -1,0 +1,266 @@
+#footer{
+	flex-shrink: 0;
+	background-color: $color-darkgrey;
+	/*padding: 6rem 0;*/
+	border-top: 0.5rem solid #494949;
+
+	.content{
+		padding-top: 6rem;
+		padding-bottom: 6rem;
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+		justify-content: space-between;
+
+		@include media-breakpoint-down(md){
+			.column{
+				&:nth-child(1){					
+					text-align: center;
+
+					#book_cta{
+						display: inline-block;
+					}
+				}
+
+				&:nth-child(2){
+					/*order: 3;*/
+					/*width: 33%;*/
+				}
+
+				&:nth-child(3){
+					/*order: 4;*/
+					/*width: 33%;*/
+				}
+
+				&:nth-child(4){
+					/*order: 2;*/
+					/*width: 33%;*/
+					display: none;
+				}
+			}
+		}
+		
+		.column{
+			&:nth-child(1){					
+				#book_cta{
+					display: none;
+				}
+			}
+
+			@include media-breakpoint-down(md){
+				&:nth-child(1){					
+					text-align: center;
+
+					#book_cta{
+						display: inline-block;
+					}
+				}
+			}
+
+			@include media-breakpoint-down(sm){
+				text-align: center;
+				width: 100%;
+
+				&:nth-child(2){
+					margin-top: 2.5rem;
+				}
+
+				&:nth-child(3){
+					margin-top: 2.5rem;
+				}
+			}
+
+			.logo{
+				width: 100%;
+				max-width: 30rem;
+				height: auto;
+				min-width: 25rem;
+				/*margin-bottom: 2rem;*/
+
+				@include media-breakpoint-down(lg){
+					max-width: 20rem;
+					min-width: unset;
+				}
+
+				@include media-breakpoint-down(md){
+					max-width: 18rem;
+				}
+
+				@include media-breakpoint-down(sm){
+					max-width: 30rem;
+				}
+
+				@media only screen and (max-width: 500px){
+					max-width: 25rem;
+				}
+			}
+
+			#logo_text{
+				font-size: 2.8rem;
+	    		margin-top: 0.5rem;
+				color: #fff;
+				text-align: center;
+
+				@include media-breakpoint-down(lg){
+					font-size: 2rem;
+				}
+
+				@include media-breakpoint-down(md){
+					font-size: 1.6rem;
+				}
+
+				@include media-breakpoint-down(sm){
+					font-size: 2.8rem;
+				}
+
+				@media only screen and (max-width: 500px){
+					font-size: 2.4rem;
+				}
+			}
+
+			#book_cta{
+				display: block;
+				font-size: 2.4rem;	
+				color: #fff;
+				border: 0.2rem solid $color-orange;
+				padding: 1rem 2rem;
+				border-radius: 0.5rem;
+				text-decoration: none;
+				position: relative;
+				overflow: hidden;
+				z-index: 1;
+				-webkit-transition: all 0.1s;
+				-o-transition: all 0.1s;
+				transition: all 0.1s;
+				margin-bottom:2rem;
+
+				@include media-breakpoint-down(lg){
+					font-size: 2rem;
+				}
+
+				@include media-breakpoint-down(md){
+					font-size: 1.6rem;
+					padding: 0.5rem 2rem;
+					margin-top: 1rem;
+				}
+
+				@include media-breakpoint-down(sm){
+					font-size: 2rem;
+					margin-top: 2.5rem;
+				}
+
+				&:before{
+			    	content: "";
+			    	position: absolute;
+			    	top: 100%;
+			    	bottom: 0;
+			    	left: 0;
+			    	right: 0;
+					z-index: -1;
+					background-color: $color-orange;
+					-webkit-transition: all 0.1s;
+			    	-o-transition: all 0.1s;
+			    	transition: all 0.1s;
+			    }
+
+				&:hover{
+					&:before{
+						top: 0;
+					}
+				}
+			}
+
+			#social{
+				text-align: center;
+
+				a{
+					text-decoration: none;
+					
+					img{
+						display: inline-block;
+						width: 3rem;
+						margin: 2rem 0.5rem 0 0.5rem;
+
+						@include media-breakpoint-down(md){
+							margin: 1rem 0.5rem 0 0.5rem;
+						}
+					}
+				}	
+			}
+
+			#opening_hours{
+				list-style-type: none;
+
+				li{
+					font-size: 1.4rem;
+					color: #fff;
+
+					&:first-child(){
+						font-size: 1.6rem;
+						color: $color-orange;
+						margin-bottom: 1.5rem;
+					}
+				}
+			}	
+
+			#address{
+				list-style-type: none;
+
+				li{
+					font-size: 1.4rem;
+					color: #fff;
+
+					&:first-child(){
+						font-size: 1.6rem;
+						color: $color-orange;
+						margin-bottom: 1.5rem;
+					}
+				}
+			}
+
+			#contact_details{
+				list-style-type: none;
+				/*margin-top: 1.5rem;*/
+
+				&.mob{
+					display: none;
+					@include media-breakpoint-down(md){
+						display: block;
+						margin-top: 3rem; 
+					}
+
+				}
+
+				li{
+					font-size: 1.4rem;
+					color: #fff;
+
+					&:first-child(){
+						font-size: 1.6rem;
+						color: $color-orange;
+						margin-bottom: 1.5rem;
+					}
+
+					a{
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+
+	#copyright{
+		background-color: $color-orange;
+		padding: 1.1rem 0 1rem 0;
+
+		p{
+			text-align: center;
+			color: #fff;
+			font-size: 1.2rem;
+			line-height: 1em;
+
+			a{
+				color: #fff;
+			}
+		}
+	}
+}

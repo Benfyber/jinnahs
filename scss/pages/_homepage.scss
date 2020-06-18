@@ -1,0 +1,378 @@
+section {
+	overflow: hidden;
+}
+
+#vouchers {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: $color-darkgrey;
+	z-index: 10;
+
+	a {
+		display: block;
+		font-size: 1.6rem;
+		text-align: center;
+		color: #fff;
+		padding: 0.5rem 1rem;
+
+		@include media-breakpoint-down(xs) {
+			font-size: 1.4rem;
+		}
+
+		@media only screen and (max-width: 450px) {
+			font-size: 1.2rem;
+		}
+	}
+}
+
+#homepage {
+	border-top: 5px solid white;
+
+	.intro {
+		background-color: $color-darkgrey;
+
+		.voucher-right {
+			/*background-color:$color-darkgrey;*/
+			padding: 15rem 20rem;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			flex-direction: column;
+
+			align-items: center;
+
+			@include media-breakpoint-down(xl) {
+				padding: 10rem 5rem 10rem 10rem;
+			}
+
+			@include media-breakpoint-down(lg) {
+				order: -1;
+				padding: 10rem 15rem 0;
+			}
+
+			@include media-breakpoint-down(md) {
+				padding: 5rem 10rem 0;
+			}
+
+			@include media-breakpoint-down(xs) {
+				padding: 4rem 2rem 0;
+			}
+		}
+
+		.voucher-left {
+			position: relative;
+			background-image: url(../images/left.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: 50% 50%;
+			padding: 6rem 0;
+
+			background-image: url('../images/voucher mock-up.png');
+			background-size: contain;
+
+
+			@include media-breakpoint-down(lg) {
+				height: 300px;
+			}
+		}
+
+		.left {
+			padding: 15rem 20rem;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			flex-direction: column;
+
+			@include media-breakpoint-down(xl) {
+				padding: 10rem 5rem 10rem 10rem;
+			}
+
+			@include media-breakpoint-down(lg) {
+				padding: 10rem 15rem 0;
+			}
+
+			@include media-breakpoint-down(md) {
+				padding: 5rem 10rem 0;
+			}
+
+			@include media-breakpoint-down(xs) {
+				padding: 3rem 1rem 0;
+			}
+		}
+
+		.right {
+			position: relative;
+			background-image: url(../images/right.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: 50% 0%;
+			padding: 6rem 0;
+
+			@include media-breakpoint-down(lg) {}
+
+			&:before,
+			:after {
+				content: "";
+				position: absolute;
+				width: 100%;
+				height: 100%;
+			}
+
+			&:before {
+				top: 0;
+				background: linear-gradient(to right, #3c3c3b 20%, transparent 100%);
+
+				@include media-breakpoint-down(lg) {
+					background: linear-gradient(to bottom, #3c3c3b 30%, transparent 100%);
+				}
+			}
+		}
+
+		.right1 {
+			/*background-color:$color-darkgrey;*/
+			padding: 15rem 20rem;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			flex-direction: column;
+
+			@include media-breakpoint-down(xl) {
+				padding: 10rem 5rem 10rem 10rem;
+			}
+
+			@include media-breakpoint-down(lg) {
+				order: -1;
+				padding: 10rem 15rem 0;
+			}
+
+			@include media-breakpoint-down(md) {
+				padding: 5rem 10rem 0;
+			}
+
+			@include media-breakpoint-down(xs) {
+				padding: 4rem 2rem 0;
+			}
+		}
+
+		.left1 {
+			position: relative;
+			background-image: url(../images/left.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: 50% 50%;
+			padding: 6rem 0;
+
+			&.voucher {
+				background-image: url('../images/voucher mock-up.png');
+				background-size: contain;
+			}
+
+			@include media-breakpoint-down(lg) {
+				height: 300px;
+			}
+
+
+			&:before,
+			:after {
+				content: "";
+				position: absolute;
+				width: 100%;
+				height: 100%;
+			}
+
+			&:before {
+				top: 0;
+				background: linear-gradient(to left, #3c3c3b 20%, transparent 100%);
+
+				@include media-breakpoint-down(lg) {
+					background: linear-gradient(to bottom, #3c3c3b 30%, transparent 100%);
+				}
+			}
+
+		}
+
+
+		.content {
+
+
+
+
+			h2 {
+				font-size: 3.6rem;
+				color: white;
+				margin-bottom: 3rem;
+				text-align: center;
+
+
+				@include media-breakpoint-down(sm) {
+					font-size: 3.2rem;
+				}
+
+				@media only screen and (max-width: 600px) {
+					font-size: 2.6rem;
+				}
+			}
+
+			p {
+				font-size: 1.8rem;
+				color: white;
+				margin-bottom: 2rem;
+				/*padding: 0 1.5rem;*/
+
+				&:last-child() {
+					margin-bottom: 0;
+				}
+
+				@include media-breakpoint-down(lg) {
+					font-size: 1.6rem;
+					/*padding: 0;*/
+				}
+			}
+		}
+	}
+
+
+	#gallery_section {
+
+		.column {
+			height: 50rem;
+			overflow: hidden;
+
+			@media only screen and (max-width: 1920px) {
+				height: 45rem;
+			}
+
+			@media only screen and (max-width: 1700px) {
+				height: 40rem;
+			}
+
+			@media only screen and (max-width: 1400px) {
+				height: 35rem;
+			}
+
+			@include media-breakpoint-down(sm) {
+				height: 30rem;
+			}
+
+			@include media-breakpoint-down(xs) {
+				height: 25rem;
+			}
+
+			#title_wrap {
+				background-color: $color-lightgrey;
+				display: -webkit-flex;
+				display: -moz-flex;
+				display: -ms-flex;
+				display: -o-flex;
+				display: flex;
+				height: 100%;
+
+				h2 {
+					margin: auto;
+					font-size: 3.6rem;
+					color: $color-darkgrey;
+
+					@include media-breakpoint-down(md) {
+						font-size: 3rem;
+					}
+
+					@include media-breakpoint-down(sm) {
+						font-size: 3.2rem;
+					}
+
+					@media only screen and (max-width: 600px) {
+						font-size: 2.6rem;
+					}
+
+					a {
+						color: $color-orange;
+					}
+				}
+			}
+
+			.gal_img {
+				background-size: cover;
+				height: 100%;
+				width: 100%;
+				background-repeat: no-repeat;
+				background-position: 50% 50%;
+			}
+		}
+	}
+
+
+	#reviews {
+		background-color: $color-lightgrey;
+		display: none;
+
+		#fb_reviews {
+			padding: 5rem 0;
+
+			h2 {
+				font-size: 3.6rem;
+				margin-bottom: 3rem;
+				color: $color-darkgrey;
+				text-align: center;
+
+				@include media-breakpoint-down(sm) {
+					font-size: 3.2rem;
+				}
+
+				@media only screen and (max-width: 600px) {
+					font-size: 2.6rem;
+				}
+			}
+		}
+
+		#ad_reviews {
+			padding: 0 0 5rem 0;
+
+			h2 {
+				font-size: 3.6rem;
+				margin-bottom: 3rem;
+				color: $color-darkgrey;
+				text-align: center;
+
+				@include media-breakpoint-down(sm) {
+					font-size: 3.2rem;
+				}
+
+				@media only screen and (max-width: 600px) {
+					font-size: 2.6rem;
+				}
+			}
+		}
+
+		.wprs_unslider-arrow {
+			&.next {
+				-webkit-transform: translateY(-50%);
+				-ms-transform: translateY(-50%);
+				-o-transform: translateY(-50%);
+				transform: translateY(-50%);
+
+				@media only screen and (max-width: 650px) {
+					right: -1.5rem;
+				}
+			}
+
+			&.prev {
+				-webkit-transform: translateY(-50%) rotate(-180deg);
+				-ms-transform: translateY(-50%) rotate(-180deg);
+				-o-transform: translateY(-50%) rotate(-180deg);
+				transform: translateY(-50%) rotate(-180deg);
+
+				@media only screen and (max-width: 650px) {
+					left: -1.5rem;
+				}
+			}
+		}
+	}
+}

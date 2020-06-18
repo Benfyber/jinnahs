@@ -1,0 +1,17 @@
+html{
+	height: 100%;
+}
+
+body{
+	height: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+}
+
+#flex_wrapper{
+	flex: 1 0 auto;
+}
